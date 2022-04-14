@@ -125,8 +125,12 @@ header a:hover {
     box-shadow: none;
 }
 /*bunbun*/
+.bunbun {
+    text-align: center;
+}
 .grid {
     display: grid;
+    margin: 2rem 15%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: .5rem;
