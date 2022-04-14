@@ -1,0 +1,167 @@
+/*universal*/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+main,
+footer {
+    position: relative;
+    top: 8.25rem;
+}
+.container {
+    padding: 1rem;
+}
+/*header*/
+#mobile {
+    display: none;
+}
+header {
+    background-image: url("./resources/2474216.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid midnightblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+header nav {
+    margin: auto 2rem;
+}
+header h1 {
+    color: aliceblue;
+    margin: 2rem 4rem;
+}
+header li {
+    display: inline;
+    margin: 0 .5rem;
+}
+header a {
+    color: aliceblue;
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(206, 166, 241);
+}
+@media only screen and (max-width: 940px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}
+@media only screen and (max-width: 795px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 4rem;
+    }
+    header li {
+        margin: .5rem auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: block;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    header nav {
+        display: none;
+    }
+}
+/*why*/
+.quote {
+    background-image: url(./resources/2474216.jpg);
+    background-size: cover;
+    font-family: "Send Flowers", cursive;
+    font-size: 1.8rem;
+    padding: 2rem;
+    color: aliceblue;
+    border-radius: 1rem;
+    border: 1px solid midnightblue;
+}
+/*about*/
+.about-me {
+    background-color: rgb(206, 166, 241);
+    border: solid 1px darkviolet;
+    border-radius: 1rem;
+}
+.about-me h2 {
+    margin-top: .2rem;
+}
+.about-me .flags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flags img {
+    max-width: 18rem;
+    min-width: 10rem;
+    box-shadow: .2rem .25rem mediumpurple;
+    border-radius: .4rem;
+    border: 1px solid midnightblue;
+    margin: 1rem;
+}
+.flags img:active {
+    position: relative;
+    top: .25rem;
+    left: .2rem;
+    box-shadow: none;
+}
+/*bunbun*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: .5rem;
+}
+.grid-element {
+    text-align: center;
+    line-height: 8rem;
+    background-color: rgb(206, 166, 241);
+    border-radius: .5rem;
+    border: darkviolet 1px solid;
+}
+/*contact*/
+#contact img {
+    width: 5rem;
+}
+#contact ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+#contact li {
+    display: inline;
+}
+#contact a {
+    text-decoration: none;
+    color: midnightblue;
+}
+#contact .container {
+    text-align: center;
+}
+/*footer*/
+footer {
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
